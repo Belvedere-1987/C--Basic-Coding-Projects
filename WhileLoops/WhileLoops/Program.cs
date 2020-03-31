@@ -46,9 +46,10 @@
         while (!correctDay);
         Console.WriteLine("What is the best year?");
         string yearAnswer = Console.ReadLine();
-        bool rightYear = yearAnswer == "1987";
+        bool rightYear = true;
+            
 
-        while(!rightYear)
+        while (rightYear == true)
         {
             switch(yearAnswer)
             {
@@ -67,7 +68,7 @@
                 case "1987":
                     Console.WriteLine("You are right! Radical!");
                     Console.WriteLine("Thanks for playing!");
-                    rightYear = true;
+                    rightYear = false;
                     Console.ReadLine(); 
                     break;
 

@@ -1,4 +1,4 @@
-﻿using System;
+﻿    using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +10,17 @@ namespace Strings
     {
         static void Main(string[] args)
         {
+            string name = "Charlie";
+            string quote = "The main said \"Hello\", Charlie. \n Hello on a new line. \n \t Hello on a new line and a new tab";
+            string fileName = @"C:\Users\Student";
+
+            bool trueOrFalse = name.Contains("l");
+            trueOrFalse = name.EndsWith("Z");
+
+            int length = name.Length; 
+
+            Console.WriteLine(trueOrFalse);
+            Console.ReadLine();
         }
     }
 }
