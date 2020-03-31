@@ -17,9 +17,18 @@ namespace Strings
             bool trueOrFalse = name.Contains("l");
             trueOrFalse = name.EndsWith("Z");
 
-            int length = name.Length; 
+            int length = name.Length;
 
-            Console.WriteLine(trueOrFalse);
+            name = name.ToUpper();
+
+            name = name.ToLower();
+
+            StringBuilder sb = new StringBuilder();
+
+            sb.Append("My name is Charlie");
+
+
+            Console.WriteLine(sb);
             Console.ReadLine();
         }
     }
