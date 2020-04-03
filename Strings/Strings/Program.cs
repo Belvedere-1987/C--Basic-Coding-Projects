@@ -30,6 +30,21 @@ namespace Strings
 
             Console.WriteLine(sb);
             Console.ReadLine();
+
+            List<string> nbaChamps = new List<string>() { "Raptors", "Warriors", "Spurs","Warriors", "Cavaliers", "Warriors" };
+            StringBuilder champChecker = new StringBuilder();
+            Console.WriteLine("\n Which of these NBA teams have won multiple championships in the past five years?: Raptors,Cavaliers, Warriors,Spurs?");
+            foreach (string team in nbaChamps)
+            {
+                champChecker.Append(team);
+                string champs = champChecker.ToString();
+                string duplicate = team + team;
+                if (champs.Contains(duplicate))
+                {
+                    Console.WriteLine(duplicate);               
+                        }
+            }
+            Console.ReadLine();
         }
     }
 }
