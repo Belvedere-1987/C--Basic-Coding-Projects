@@ -25,6 +25,7 @@ namespace TwentyOne
                     card.Suit = suit;
                     card.Face = face;
                     Cards.Add(card);
+
                 }
             }
 
