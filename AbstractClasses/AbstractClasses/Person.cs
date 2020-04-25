@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace AbstractClasses
 {
-    class Person
+    public abstract class Person
     {
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+
+        public virtual void SayName()
+        {
+            string fullName = FirstName + " " + LastName;
+            Console.WriteLine("Name: " + fullName);
+        }
     }
 }
