@@ -16,7 +16,7 @@ namespace ConstantAssignment
             var Wrong = "something is wrong";
             Console.WriteLine(Wrong);
             Combine adder = new Combine();
-            Console.WriteLine(Answer); 
+            Console.WriteLine(adder); 
             Console.ReadLine(); 
         }
     }
