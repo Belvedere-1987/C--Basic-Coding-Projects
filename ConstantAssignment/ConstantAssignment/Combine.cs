@@ -9,10 +9,10 @@ namespace ConstantAssignment
     class Combine
     {
 
-        public Combine(): this(2,2)
-        {
-            Console.WriteLine("this should be right now");
-        }
+        //public Combine(): this(2,2)
+        //{
+        //    Console.WriteLine("this should be right now");
+        //}
         public Combine(int num1, int num2)
         {
             int answer = num1 + num2;
